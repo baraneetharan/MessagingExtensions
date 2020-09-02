@@ -1,0 +1,21 @@
+{
+  "name": "messagingextensions",
+  "version": "1.0.0",
+  "description": "Messaging Extension Example",
+  "main": "getBooks.js",
+  "scripts": {
+    "test": "New Message Extension"
+  },
+  "keywords": [
+    "Search",
+    "Books"
+  ],
+  "author": "Baranee",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "botbuilder-teams": "^0.2.9",
+    "ngrok": "^3.2.7",
+    "restify": "^8.5.1"
+  }
+}
