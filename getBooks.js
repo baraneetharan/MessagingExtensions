@@ -11,7 +11,8 @@ var connector = new teams.TeamsChatConnector({
     appPassword: "2cnS66W-.ygY1wdyyJZk4Lj_mR_dj~2uu."
 });
 
-const port = 8080;
+// const port = 8080;
+const port = process.env.PORT || 3000;
 
 var server = restify.createServer();
 
@@ -21,7 +22,7 @@ server.listen(port, function() {
         console.log(`Node.js local server is publicly-accessible at ${url}`);
     });
     console.log('%s listening to %s', server.name, util.inspect(server.address()));
-    
+
 });
 
 // this will reset and allow to receive from any tenants
